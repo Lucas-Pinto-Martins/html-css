@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5!</title>
+</head>
+<body>
+
+    <!--Adicionando imagens.-->
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Carrega a imagem(srcset) se o tamanho da tela for menor que 750px. As tags source, devem ser carregadas em ordem de tamanho.-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Carrega a imagem(srcset) se o tamanho da tela for menor que 1050px.-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Adicionando audio- midias compativeis: mp3(mpeg), ogg, wav-->
+    <h1>Reproduzindo àudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/London Bayou - ALBIS.mp3" controls></audio>
+    Outra forma de adicionar.-->
+    <audio preload="metadata" controls>
+        <source src="midia/London Bayou - ALBIS.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/London Bayou - ALBIS.mp3">Clique aqui para fazer o dowload do arquivo mp3.</a></p>
+    </audio>
+
+    <!--Adicionando vídeo- midias compativeis: mp4,m4v,ogg,webm-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/pexels-sami-aksu-10207542.mp4" width="500" controls></video>
+    <!--Ou-->
+    <video controls width="500" poster="imagens/foto-g.png"> <!--Poster adiciona uma imagem de capa para o vídeo antes de ser reproduzido.-->
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/pexels-sami-aksu-10207542.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <!--Inserindo vídeo através de serviços de vídeo. Assim não é preciso hospedar os vídeos localmente.-->
+    <h1>Inserindo vídeos do Youtube.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/168178209?h=153e34e0d0&color=c9ff23" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

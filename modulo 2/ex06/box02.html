@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(163, 116, 163);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{/*Efeito de sombra dentro do elemento.*/
+            box-shadow: inset 2px 1px 16px 7px rgba(0, 0, 0, 0.575);
+        }
+
+        nav{
+            background-color: rgb(1, 1, 167);
+            padding: 3px;
+            box-shadow: 5px 3px 4px 1px rgba(0, 0, 0, 0.472);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 182, 255);
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: lightgreen;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /*Esquerda superior- direita inferior/ direita superior- esquerda inferior*/
+            box-shadow: 4px 4px 9px 0px rgba(8, 25, 180, 0.719);
+        }
+
+        section#assuntos{
+            margin-bottom: 10px;
+        }
+
+        section > a{
+            text-decoration: none;
+            margin-right: 30px;
+            color: black;
+        }
+
+        section > a:hover{
+            background-color: rgb(1, 1, 167);
+            color:rgb(255, 182, 255);
+        }
+
+        article{
+            background-color: plum;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(170, 126, 170)
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: rgba(90, 28, 204, 0.815);
+            margin: 15px;
+            border-radius: 100px; /*Também é possível usar porcentagem*/
+        }
+
+        div#bola2{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color:rgba(65, 0, 187, 0.753);
+            border-radius: 100px; /*Também é possível usar porcentagem*/
+            margin-bottom: 15px;
+            margin-left: -115px;
+        }
+
+        /*
+        Adicionando uma imagem a borda
+        border: 12px solid black;
+        border-image: url('nome_do_arquivo') 27 repeat
+        */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <a href="#">Esportes</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique delectus cumque porro fugit sed, tenetur deserunt non? Odio maiores labore illo totam rerum repellendus provident perferendis voluptate laborum excepturi!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+
+    <div id="bola"></div>
+    <div id="bola2"></div>
+    
+</body>
+</html>
