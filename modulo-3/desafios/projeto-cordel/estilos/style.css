@@ -62,6 +62,10 @@ section{
     font-size: 3vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 /*Estilizando a section "normal"*/
 
 section.normal{
@@ -71,11 +75,28 @@ section.normal{
 
 /*Estilizando a section "imagem"*/
 
+section.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.664);
+    background-position: right center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.329);
     color: white;
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+    
+}
+
+section#img2{
+    background-image: url(../imagens/background002.jpg);
 }
 
 /*Estilizando o footer*/
