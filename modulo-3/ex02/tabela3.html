@@ -14,13 +14,22 @@
             width: 500px;
             height: 50px;
             border-collapse:collapse; /*Une as células da tabela*/
+            position: relative; /*Necessário para cabeçalho fixo*/
         }
 
+        /*Legenda da tabela*/
         caption{
             font-size: 1.5em;
             font-weight: bold;
             background-color: lightgray;
             padding: 10px;
+        }
+
+        /*Deixando o cabeçalho fixo*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(121, 121, 121);
         }
 
         td, th{
@@ -30,6 +39,7 @@
             vertical-align: top; /*Alinhamento vertical*/
         }
 
+        /*Efeito zebrado*/
         tbody > tr:nth-child(2n){
             background-color: lightgrey;
         }
@@ -85,6 +95,18 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 254 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num"> 11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num"> 11 377 239</td>
             </tr>
         </tbody>
         <tfoot>
