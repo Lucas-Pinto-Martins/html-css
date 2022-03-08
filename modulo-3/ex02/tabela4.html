@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 200px;
+            text-align: center;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Mesclagem de células</h1>
+
+    <!-- Hierarquia de tabelas(simples)
+        table = tabela
+            table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+
+    <!-- Anatomia para tabelas grandes
+        Caption -- Legenda da tabela 
+        Table
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+            -->
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--Espande a célula para ocupar o espaço de "2" colunas-->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!--Espande a célula para ocupar o espaço de "3" linhas-->
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+</html>
