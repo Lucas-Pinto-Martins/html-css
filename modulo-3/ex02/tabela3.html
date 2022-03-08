@@ -16,11 +16,22 @@
             border-collapse:collapse; /*Une as células da tabela*/
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 5px;
             text-align: center; /*Alinhamento horizontal*/
             vertical-align: top; /*Alinhamento vertical*/
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
         }
 
         thead, tfoot{
@@ -45,7 +56,8 @@
     -->
 
     <!-- Anatomia para tabelas grandes
-         Table
+        Caption -- Legenda da tabela 
+        Table
             Thead
                 tr, td, th
             Tbody
@@ -54,10 +66,11 @@
                 tr, td, th
             -->
     <table>
+        <caption>População dos estados brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -76,7 +89,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
