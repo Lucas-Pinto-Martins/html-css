@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabela filmes</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        table{
+            /*border-collapse: collapse;*/
+            width: 300px;
+            text-align: center;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Mesclagem de células 3</h1>
+
+    <!-- Hierarquia de tabelas(simples)
+        table = tabela
+            table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+
+    <!-- Anatomia para tabelas grandes
+        Caption -- Legenda da tabela 
+        Table
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+            -->
+    <table>
+        <thead>
+            <tr>
+                <td>Grupo</td>
+                <td>Nomes</td>
+                <td colspan="3">Filmes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="titulo" rowspan="3">Mulheres</td>
+                <td>N1</td>
+                <td>F1</td>
+                <td>F1</td>
+                <td>F1</td>
+            </tr>
+            <tr>
+                <td>N2</td>
+                <td>F2</td>
+                <td>F2</td>
+                <td>F2</td>
+            </tr>
+            <tr>
+                <td>N3</td>
+                <td>F3</td>
+                <td>F3</td>
+                <td>F3</td>
+            </tr>
+            <tr>
+                <td class="titulo" rowspan="3">Homens</td>
+                <td>N1</td>
+                <td>F1</td>
+                <td>F2</td>
+                <td>F3</td>
+            </tr>
+            <tr>
+                <td>N2</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
