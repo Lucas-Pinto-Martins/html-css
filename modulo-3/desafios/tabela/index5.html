@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        table{
+            /*border-collapse: collapse;*/
+            width: 300px;
+            text-align: center;
+        }
+
+        thead, .titulo, caption{
+            font-weight: bold;
+        }
+
+        .cabeçalho{
+            background-color: rgb(146, 146, 146);
+            color: white;
+        }
+
+        .cabeçalho2{
+            background-color: rgb(146, 146, 146);
+            color: white;
+            font-weight: bold;
+        }
+
+        .cabeçalho2 th{
+            text-align: justify;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Boletim escolar</h1>
+
+    <!-- Hierarquia de tabelas(simples)
+        table = tabela
+            table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+
+    <!-- Anatomia para tabelas grandes
+        Caption -- Legenda da tabela 
+        Table
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+            -->
+    <table>
+        <caption>
+            Boletim escolar
+        </caption>
+        <thead>
+            <tr class="cabeçalho">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr class="cabeçalho">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="titulo" rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="cabeçalho2">
+                <th scope="row" colspan="4">Média de exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="titulo" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="cabeçalho2">
+                <th scope="row" colspan="4">Média de humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
